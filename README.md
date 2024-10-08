@@ -28,7 +28,7 @@ npm install
 ### 3. Firebase Setup
 Create a Firebase project at Firebase Console.
 Enable Firestore in the Firebase console.
-Download your Firebase Service Account JSON file from Firebase Console and place it in the root of your project as firebaseServiceAccount.json.
+Download your Firebase Service Account JSON file from Firebase Console and place it in the root of your project.
 ### 4. Environment Variables
 Create a .env file in the root of your project and add your Firebase project ID:
 
@@ -39,7 +39,7 @@ FIREBASE_PROJECT_ID=your-project-id
 bash
 Copy code
 node server.js
-The API should now be running on http://localhost:3000.
+The API should now be running on http://localhost:5000.
 
 API Endpoints
 Authentication
