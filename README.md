@@ -18,11 +18,13 @@ Before running the API, ensure you have the following installed:
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Silve123/Todo-App-Api.git
-cd todo-api```
+cd todo-api
+```
 
 ### 2. Install dependencies
 ```bash
-npm install```
+npm install
+```
 ### 3. Firebase Setup
 Create a Firebase project at Firebase Console.
 Enable Firestore in the Firebase console.
@@ -31,7 +33,8 @@ Download your Firebase Service Account JSON file from Firebase Console and place
 Create a .env file in the root of your project and add your Firebase project ID:
 
 ```bash
-FIREBASE_PROJECT_ID=your-project-id```
+FIREBASE_PROJECT_ID=your-project-id
+```
 ### 5. Run the Server
 bash
 Copy code
@@ -49,12 +52,12 @@ PUT /todos/
 DELETE /todos/
 – Delete a todo
 Project Structure
-bash
-Copy code
+```bash
 ├── firebaseServiceAccount.json  # Firebase service account credentials
 ├── server.js                    # The API server file
 ├── package.json                 # Project metadata and dependencies
 └── .env                         # Environment variables
+```
 Technologies Used
 Node.js
 Express
@@ -63,7 +66,6 @@ Firestore
 Contributing
 Feel free to submit a pull request or open an issue if you have suggestions or find bugs.
 
-css
-Copy code
-
+```css
 This version ensures that all steps, including code blocks, are properly formatted in Markdown. Let me know if this works!
+```
