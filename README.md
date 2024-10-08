@@ -65,7 +65,3 @@ Firebase Admin SDK
 Firestore
 Contributing
 Feel free to submit a pull request or open an issue if you have suggestions or find bugs.
-
-```css
-This version ensures that all steps, including code blocks, are properly formatted in Markdown. Let me know if this works!
-```
