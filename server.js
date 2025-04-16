@@ -15,6 +15,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
 // 1. Get all todos for a specific user
 app.get('/api/todos/:userId', async (req, res) => {
   const { userId } = req.params;
@@ -28,6 +29,7 @@ app.get('/api/todos/:userId', async (req, res) => {
   }
 });
 
+
 // 2. Create a new todo for a specific user
 app.post('/api/todos', async (req, res) => {
   const { text, userId } = req.body;
@@ -40,6 +42,7 @@ app.post('/api/todos', async (req, res) => {
     res.status(500).json({ error: 'Failed to create todo' });
   }
 });
+
 
 // 3. Update a todo for a specific user
 app.put('/api/todos/:id', async (req, res) => {
@@ -61,6 +64,7 @@ app.put('/api/todos/:id', async (req, res) => {
   }
 });
 
+
 // 4. Delete a todo for a specific user
 app.delete('/api/todos/:id', async (req, res) => {
   const { id } = req.params;
@@ -80,6 +84,9 @@ app.delete('/api/todos/:id', async (req, res) => {
     res.status(500).json({ error: 'Failed to delete todo' });
   }
 });
+
+
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
